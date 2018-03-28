@@ -18,6 +18,7 @@ func handle(w http.ResponseWriter, r *http.Request) {
 		http.NotFound(w, r)
 		return
 	}
+	log.Print("Handling new request")
 	fmt.Fprint(w, "Hello world!")
 }
 
